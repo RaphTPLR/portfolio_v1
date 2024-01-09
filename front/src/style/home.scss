@@ -1,0 +1,56 @@
+.home {
+    height: 100vh;
+    width: 100vw;
+
+    .header, .footer {
+        width: 100vw;
+        height: 15vh;
+        display: grid;
+        place-items: center;
+    }
+
+    .header {
+        font-size: 3rem;
+    }
+
+    .footer {
+        font-size: 1rem;
+    }
+
+    .content {
+        height: 70vh;
+        width: auto;
+        margin: 0 7vw;
+        display: flex;
+    }
+
+    .navbar, .name-project {
+        height: 100%;
+        width: 25vw;
+    }
+
+    .container {
+        height: 100%;
+        width: 50%;
+        overflow: scroll;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        .unselected {
+            background-color: var(--color-font);
+            height: 1rem;
+            width: 100vw;
+            margin: 1rem 0;
+            cursor: pointer;
+        }
+    }
+
+    .name-project {
+        text-transform: uppercase;
+        font-size: 4rem;
+        display: grid;
+        place-items: center;
+    }
+}
