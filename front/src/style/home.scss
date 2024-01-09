@@ -38,6 +38,19 @@
             display: none;
         }
 
+        img {
+            filter: grayscale(100%);
+            transition: all .3s ease-in-out;
+
+            &:hover {
+                filter: grayscale(70%);
+            }
+        }
+        
+        &>div {
+            cursor: pointer;
+        }
+
         .unselected {
             background-color: var(--color-font);
             height: 1rem;

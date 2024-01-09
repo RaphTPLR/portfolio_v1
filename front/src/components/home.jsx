@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-import '../style/home.scss'
+import '../style/home.scss';
 
 export default function Home() {
     const [donnees, setDonnees] = useState([]);
@@ -13,7 +13,7 @@ export default function Home() {
             .catch(error => console.error('Erreur de chargement des données :', error));
     }, []);
 
-    const handleDivClick = (index) => {
+    const handleDivHover = (index) => {
         setImageAffichee(index);
     };
 
@@ -25,35 +25,31 @@ export default function Home() {
             <div className="content">
                 <div className="navbar"></div>
                 <div className="container">
-                    {/* {donnees.map(item => (
-                        <div key={item.id}>
-                            <img src={item.images[0]} alt={`Image ${item.id}`} />
-                        </div>
-                    ))} */}
                     {donnees.length > 0 && (
-                    <React.Fragment>
-                        {Array.from({ length: donnees.length }, (_, index) => (
-                            <div
-                                key={donnees[index].id}
-                                onClick={() => handleDivClick(index)}
-                                className={`image-div ${imageAffichee === index ? 'selected' : 'unselected'}`}
-                            >
-                                {imageAffichee === index && (
-                                    <img src={donnees[index].images[0]} alt={`Image ${donnees[index].id}`} />
-                                )}
-                                {/* Autres éléments que vous souhaitez afficher pour chaque élément */}
-                            </div>
-                        ))}
-                    </React.Fragment>
-                )}
+                        <React.Fragment>
+                            {Array.from({ length: donnees.length }, (_, index) => (
+                                <div
+                                    key={donnees[index].id}
+                                    onMouseOver={() => handleDivHover(index)}
+                                    className={`image-div ${imageAffichee === index ? 'selected' : 'unselected'}`}
+                                >
+                                    {imageAffichee === index && (
+                                        <img src={donnees[index].images[0]} alt={`Image ${donnees[index].id}`} />
+                                    )}
+                                </div>
+                            ))}
+                        </React.Fragment>
+                    )}
                 </div>
                 <div className="name-project">
-                    <h2>Pokedex</h2>
+                    {imageAffichee !== null && donnees[imageAffichee] !== undefined && (
+                        <h2>{donnees[imageAffichee].nom}</h2>
+                    )}
                 </div>
             </div>
             <div className="footer fontspe">
                 <p>V1</p>
             </div>
         </div>
-    )
+    );
 }
