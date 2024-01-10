@@ -46,38 +46,25 @@ export default function Home() {
                     )}
                 </div>
                 <div className="container">
-                {donnees.length > 0 && (
-                    <React.Fragment>
-                    {donnees.map((item, index) => (
-                        <Link to={item.path}>
+                    {donnees.length > 0 && (
+                        <React.Fragment>
+                        {donnees.map((item, index) => (
                             <div
                             key={item.id}
-                            onMouseOver={() => handleDivHover(index)}
+                            onClick={() => handleDivHover(index)}
                             className={`image-div ${
                                 imageAffichee === index ? 'selected' : 'unselected'
                             }`}
-                            style={
-                                imageAffichee !== index
-                                ? {
-                                    backgroundImage: `url(${item.images[0]})`,
-                                    backgroundSize: 'cover',
-                                    backgroundPosition: 'center',
-                                    filter: 'grayscale(70%)',
-                                    }
-                                : null
-                            }
-                            >
-                            {imageAffichee === index && (
-                                <img
-                                src={item.images[0]}
-                                alt={`Image ${item.id}`}
-                                />
-                            )}
-                            </div>
-                        </Link>
-                    ))}
-                    </React.Fragment>
-                )}
+                            style={{
+                                backgroundImage: `url(${item.images[0]})`,
+                                backgroundSize: 'cover',
+                                backgroundPosition: 'center',
+                                filter: imageAffichee !== index ? 'grayscale(100%)' : 'none',
+                            }}
+                            />
+                        ))}
+                        </React.Fragment>
+                    )}
                 </div>
                 <div className="name-project">
                     {imageAffichee !== null && donnees[imageAffichee] !== undefined && (

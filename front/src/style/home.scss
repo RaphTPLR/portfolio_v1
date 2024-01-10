@@ -49,26 +49,31 @@
 
         img {
             filter: grayscale(100%);
-            opacity: .7;
-            transition: all .3s ease-in-out;
-
-            &:hover {
-                opacity: .9;;
-            }
         }
         
         &>div {
             cursor: pointer;
         }
 
-        .unselected {
-            background-color: var(--color-font);
-            opacity: 0.5;
+        .image-div {
             height: 6rem;
+            transition: height 0.3s ease-in-out;
+            background-color: var(--color-font);
+            // opacity: 0.5;
             width: 100%;
             margin: 1rem 0;
             cursor: pointer;
-            transition: height 0.3s ease-in-out;
+            transition: all .3s ease-in-out;
+            overflow: hidden;
+
+            &:hover, .image-div.selected:hover {
+                filter: grayscale(60%) !important;
+            }
+        }
+        
+        .image-div.selected {
+            height: 23rem;
+            filter: grayscale(60%) !important;
         }
     }
 
