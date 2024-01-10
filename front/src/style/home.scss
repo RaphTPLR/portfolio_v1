@@ -97,11 +97,13 @@
             width: 20vw;
             display: flex;
             align-items: center;
+            transition: all .5s ease-in-out;
 
             .indice {
                 background-color: #fff;
                 height: 100%;
                 width: .3rem;
+                cursor: pointer;
             }
 
             .name {

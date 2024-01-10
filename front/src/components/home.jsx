@@ -15,7 +15,7 @@ export default function Home() {
         .catch(error => console.error('Erreur de chargement des données :', error));
     }, []);
 
-    const handleDivHover = (index) => {
+    const handleDivClick = (index) => {
         setImageAffichee(index);
     };
 
@@ -36,7 +36,7 @@ export default function Home() {
                                     }`}
                                     key={item.id}
                                     >
-                                    <div className="indice"></div>
+                                    <div className="indice" onClick={() => handleDivClick(index)}></div>
                                     <div className="name">
                                         {imageAffichee === index ? <p>{item.name}</p> : ""}
                                     </div>
@@ -51,7 +51,7 @@ export default function Home() {
                         {donnees.map((item, index) => (
                             <div
                             key={item.id}
-                            onClick={() => handleDivHover(index)}
+                            onClick={() => handleDivClick(index)}
                             className={`image-div ${
                                 imageAffichee === index ? 'selected' : 'unselected'
                             }`}
