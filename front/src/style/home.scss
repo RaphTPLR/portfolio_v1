@@ -41,7 +41,8 @@
     .container {
         height: 100%;
         width: 50%;
-        overflow: scroll;
+        overflow-y: scroll;
+        // scroll-snap-type: y mandatory;
 
         &::-webkit-scrollbar {
             display: none;
@@ -56,6 +57,7 @@
         }
 
         .image-div {
+            position: relative;
             height: 6rem;
             transition: height 0.3s ease-in-out;
             background-color: var(--color-font);
@@ -65,15 +67,64 @@
             cursor: pointer;
             transition: all .3s ease-in-out;
             overflow: hidden;
+            // scroll-snap-align: center;
 
             &:hover, .image-div.selected:hover {
                 filter: grayscale(60%) !important;
             }
+
+            .btn {
+                display: none;
+            }
+
         }
         
         .image-div.selected {
             height: 23rem;
             filter: grayscale(60%) !important;
+
+            // .btn {
+            //     display: block;
+            //     position: absolute;
+            //     right: 1rem;
+            //     width: 3rem;
+            //     height: 3rem;
+            //     border-radius: 2rem;
+            //     border: 2px solid var(--color-font);
+            //     display: grid;
+            //     place-items: center;
+            //     background-color: var(--color-background);
+
+            //     img {
+            //         height: 1.4rem;
+            //     }
+            // }
+
+            a {
+                color: var(--color-font);
+                text-decoration: none;
+
+                .btn {
+                    display: block;
+                    position: absolute;
+                    bottom: 1rem;
+                    font-size: 1.5rem;
+                    letter-spacing: .3rem;
+                    width: 100%;
+
+                    p {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        img {
+                            height: 1.5rem;
+                            margin-left: .2rem;
+                        }
+                    }
+                }
+            }
+
         }
     }
 

@@ -1,12 +1,15 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import '../style/home.scss';
 import { Link } from 'react-router-dom';
 
 import Preloader from './loader';
+import BtnL from '../assets/right-arrow-alt-regular-24.png'
 
 export default function Home() {
     const [donnees, setDonnees] = useState([]);
     const [imageAffichee, setImageAffichee] = useState(0);
+    const containerRef = useRef(null);
+
 
     useEffect(() => {
         fetch('src/data/data.json')
@@ -17,6 +20,17 @@ export default function Home() {
 
     const handleDivClick = (index) => {
         setImageAffichee(index);
+
+        if (containerRef.current) {
+            const selectedDiv = containerRef.current.querySelector(`.image-div-${index}`);
+            if (selectedDiv) {
+              selectedDiv.scrollIntoView({
+                behavior: 'smooth',
+                block: 'center',
+                inline: 'center',
+              });
+            }
+          }
     };
 
     return (
@@ -45,31 +59,38 @@ export default function Home() {
                         </React.Fragment>
                     )}
                 </div>
-                <div className="container">
+                <div className="container" ref={containerRef}>
                     {donnees.length > 0 && (
-                        <React.Fragment>
+                    <React.Fragment>
                         {donnees.map((item, index) => (
-                            <div
+                        <div
                             key={item.id}
                             onClick={() => handleDivClick(index)}
-                            className={`image-div ${
-                                imageAffichee === index ? 'selected' : 'unselected'
+                            className={`image-div image-div-${index} ${
+                            imageAffichee === index ? 'selected' : 'unselected'
                             }`}
                             style={{
-                                backgroundImage: `url(${item.images[0]})`,
-                                backgroundSize: 'cover',
-                                backgroundPosition: 'center',
-                                filter: imageAffichee !== index ? 'grayscale(100%)' : 'none',
+                            backgroundImage: `url(${item.images[0]})`,
+                            backgroundSize: 'cover',
+                            backgroundPosition: 'center',
+                            filter: imageAffichee !== index ? 'grayscale(100%)' : 'none',
                             }}
-                            />
+                        >
+                            <Link to={item.path}>
+                                <div className="btn">
+                                    {/* <img src={BtnL} alt="" /> */}
+                                    <p>DETAILS <img src={BtnL} alt="" /></p>
+                                </div>
+                            </Link>
+                        </div>
                         ))}
-                        </React.Fragment>
+                    </React.Fragment>
                     )}
                 </div>
                 <div className="name-project">
                     {imageAffichee !== null && donnees[imageAffichee] !== undefined && (
-                        <h2>{donnees[imageAffichee].name}</h2>
-                    )}
+                            <h2>{donnees[imageAffichee].name}</h2>
+                        )}
                 </div>
             </div>
             <div className="footer fontspe">
