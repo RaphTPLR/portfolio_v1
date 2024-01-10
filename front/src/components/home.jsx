@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import '../style/home.scss';
+import { Link } from 'react-router-dom';
 
 export default function Home() {
     const [donnees, setDonnees] = useState([]);
@@ -45,30 +46,32 @@ export default function Home() {
                 {donnees.length > 0 && (
                     <React.Fragment>
                     {donnees.map((item, index) => (
-                        <div
-                        key={item.id}
-                        onMouseOver={() => handleDivHover(index)}
-                        className={`image-div ${
-                            imageAffichee === index ? 'selected' : 'unselected'
-                        }`}
-                        style={
-                            imageAffichee !== index
-                            ? {
-                                backgroundImage: `url(${item.images[0]})`,
-                                backgroundSize: 'cover',
-                                backgroundPosition: 'center',
-                                filter: 'grayscale(70%)',
-                                }
-                            : null
-                        }
-                        >
-                        {imageAffichee === index && (
-                            <img
-                            src={item.images[0]}
-                            alt={`Image ${item.id}`}
-                            />
-                        )}
-                        </div>
+                        <Link to={item.path}>
+                            <div
+                            key={item.id}
+                            onMouseOver={() => handleDivHover(index)}
+                            className={`image-div ${
+                                imageAffichee === index ? 'selected' : 'unselected'
+                            }`}
+                            style={
+                                imageAffichee !== index
+                                ? {
+                                    backgroundImage: `url(${item.images[0]})`,
+                                    backgroundSize: 'cover',
+                                    backgroundPosition: 'center',
+                                    filter: 'grayscale(70%)',
+                                    }
+                                : null
+                            }
+                            >
+                            {imageAffichee === index && (
+                                <img
+                                src={item.images[0]}
+                                alt={`Image ${item.id}`}
+                                />
+                            )}
+                            </div>
+                        </Link>
                     ))}
                     </React.Fragment>
                 )}

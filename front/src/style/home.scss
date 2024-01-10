@@ -49,11 +49,11 @@
 
         img {
             filter: grayscale(100%);
-            opacity: .5;
+            opacity: .7;
             transition: all .3s ease-in-out;
 
             &:hover {
-                opacity: .7;;
+                opacity: .9;;
             }
         }
         
@@ -63,7 +63,7 @@
 
         .unselected {
             background-color: var(--color-font);
-            opacity: 0.3;
+            opacity: 0.5;
             height: 6rem;
             width: 100%;
             margin: 1rem 0;
@@ -85,6 +85,7 @@
         flex-direction: column;
         justify-content: space-between;
         height: 70%;
+        align-items: end;
 
         .navbar-content {
             height: 8%;
