@@ -1,8 +1,7 @@
 [
     {
       "id": 1,
-      "nom": "Pokedex",
-      "main_image": "https://images7.alphacoders.com/592/592678.jpg",
+      "name": "Pokedex",
       "images": [
         "https://images7.alphacoders.com/592/592678.jpg",
         "https://images7.alphacoders.com/592/592678.jpg",
@@ -11,119 +10,120 @@
       "client": "Ipssi - Paris",
       "type": "Vitrine - Collection",
       "role": "Dev front-end",
-      "collab": "Rémi Korzeniowski"
+      "collab": "Rémi Korzeniowski",
+      "path": "/Pokedex"
     },
     {
         "id": 2,
-        "nom": "Feur",
-        "main_image": "https://images7.alphacoders.com/592/592678.jpg",
+        "name": "AVG Challenge",
         "images": [
-          "https://images7.alphacoders.com/592/592678.jpg",
-          "https://images7.alphacoders.com/592/592678.jpg",
-          "https://images7.alphacoders.com/592/592678.jpg"
+          "https://staticg.sportskeeda.com/editor/2023/07/feaac-16900539267765-1920.jpg",
+          "https://staticg.sportskeeda.com/editor/2023/07/feaac-16900539267765-1920.jpg",
+          "https://staticg.sportskeeda.com/editor/2023/07/feaac-16900539267765-1920.jpg"
         ],
-        "client": "Ipssi - Paris",
-        "type": "Vitrine - Collection",
-        "role": "Dev front-end",
-        "collab": "Rémi Korzeniowski"
+        "client": "Personnal",
+        "type": "Application Web",
+        "role": "Dev fullstack",
+        "collab": "/",
+        "path": "/AVG-Challenge"
       },
       {
         "id": 3,
-        "nom": "Pokedex",
-        "main_image": "https://images7.alphacoders.com/592/592678.jpg",
+        "name": "Sc@m3rZ",
         "images": [
-          "https://images7.alphacoders.com/592/592678.jpg",
+          "https://images.pexels.com/photos/1365795/pexels-photo-1365795.jpeg",
           "https://images7.alphacoders.com/592/592678.jpg",
           "https://images7.alphacoders.com/592/592678.jpg"
         ],
         "client": "Ipssi - Paris",
         "type": "Vitrine - Collection",
         "role": "Dev front-end",
-        "collab": "Rémi Korzeniowski"
+        "collab": "Rémi Korzeniowski",
+        "path": "/Scamerz"
       },
       {
         "id": 4,
-        "nom": "Pokedex",
-        "main_image": "https://images7.alphacoders.com/592/592678.jpg",
+        "name": "Marmiton",
         "images": [
-          "https://images7.alphacoders.com/592/592678.jpg",
+          "https://images.pexels.com/photos/4635596/pexels-photo-4635596.png",
           "https://images7.alphacoders.com/592/592678.jpg",
           "https://images7.alphacoders.com/592/592678.jpg"
         ],
         "client": "Ipssi - Paris",
-        "type": "Vitrine - Collection",
-        "role": "Dev front-end",
-        "collab": "Rémi Korzeniowski"
+        "type": "Vitrine",
+        "role": "Dev fullstack",
+        "collab": "Rémi Korzeniowski",
+        "path": "/Marmiton"
       },
       {
         "id": 5,
-        "nom": "Pokedex",
-        "main_image": "https://images7.alphacoders.com/592/592678.jpg",
+        "name": "CarteX",
         "images": [
-          "https://images7.alphacoders.com/592/592678.jpg",
+          "https://external-preview.redd.it/2Xoeyo3H46sUbQkxjxFPxmVAGfh850D8Hoqe-LIpF70.jpg?auto=webp&s=dc6d78d562eef402d8b8b77c857804a344ae4fbd",
           "https://images7.alphacoders.com/592/592678.jpg",
           "https://images7.alphacoders.com/592/592678.jpg"
         ],
         "client": "Ipssi - Paris",
-        "type": "Vitrine - Collection",
+        "type": "Vitrine - Collection - Opening",
         "role": "Dev front-end",
-        "collab": "Rémi Korzeniowski"
+        "collab": "4 devs Team",
+        "path": "/CarteX"
       },
       {
         "id": 6,
-        "nom": "Pokedex",
-        "main_image": "https://images7.alphacoders.com/592/592678.jpg",
+        "name": "MET France",
         "images": [
-          "https://images7.alphacoders.com/592/592678.jpg",
+          "https://www.moneyvox.fr/i/media/11l/011409l736.jpg",
           "https://images7.alphacoders.com/592/592678.jpg",
           "https://images7.alphacoders.com/592/592678.jpg"
         ],
-        "client": "Ipssi - Paris",
-        "type": "Vitrine - Collection",
+        "client": "MET France",
+        "type": "Application Web",
         "role": "Dev front-end",
-        "collab": "Rémi Korzeniowski"
+        "collab": "TheCodingMachine",
+        "path": "/MET"
       },
       {
         "id": 7,
-        "nom": "Pokedex",
-        "main_image": "https://images7.alphacoders.com/592/592678.jpg",
+        "name": "W Clone",
         "images": [
-          "https://images7.alphacoders.com/592/592678.jpg",
+          "https://pixelz.cc/wp-content/uploads/2023/09/twitter-x-logo-uhd-4k-wallpaper.jpg",
           "https://images7.alphacoders.com/592/592678.jpg",
           "https://images7.alphacoders.com/592/592678.jpg"
         ],
         "client": "Ipssi - Paris",
-        "type": "Vitrine - Collection",
+        "type": "Vitrine",
         "role": "Dev front-end",
-        "collab": "Rémi Korzeniowski"
+        "collab": "/",
+        "path": "/W"
       },
       {
         "id": 8,
-        "nom": "Pokedex",
-        "main_image": "https://images7.alphacoders.com/592/592678.jpg",
+        "name": "Spotify Clone",
         "images": [
-          "https://images7.alphacoders.com/592/592678.jpg",
+          "https://images7.alphacoders.com/133/1333817.jpeg",
           "https://images7.alphacoders.com/592/592678.jpg",
           "https://images7.alphacoders.com/592/592678.jpg"
         ],
-        "client": "Ipssi - Paris",
-        "type": "Vitrine - Collection",
+        "client": "Personnal",
+        "type": "Vitrine",
         "role": "Dev front-end",
-        "collab": "Rémi Korzeniowski"
+        "collab": "/",
+        "path": "/Spotify"
       },
       {
         "id": 9,
-        "nom": "Pokedex",
-        "main_image": "https://images7.alphacoders.com/592/592678.jpg",
+        "name": "LeagIn",
         "images": [
-          "https://images7.alphacoders.com/592/592678.jpg",
+          "https://wallpapercave.com/wp/wp2349503.jpg",
           "https://images7.alphacoders.com/592/592678.jpg",
           "https://images7.alphacoders.com/592/592678.jpg"
         ],
-        "client": "Ipssi - Paris",
-        "type": "Vitrine - Collection",
-        "role": "Dev front-end",
-        "collab": "Rémi Korzeniowski"
+        "client": "Personnal",
+        "type": "Application Web & Mobile",
+        "role": "Dev front-end - Conception",
+        "collab": "Kilian Trouet",
+        "path": "/LeagIn"
       }
   ]
   
