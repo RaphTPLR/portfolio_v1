@@ -1,0 +1,23 @@
+.preloader {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--color-background);
+    z-index: 9999;
+    
+    .progress-bar {
+        position: absolute;
+        top: 50%;
+        left: 48%;
+        font-size: 3rem;
+    }
+}
+
+.preloader.loading {
+    opacity: 1;
+}
+
+.preloader.loaded {
+    transition: all .3s ease-in-out;
+    opacity: 0;
+}

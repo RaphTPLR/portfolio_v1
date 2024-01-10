@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import '../style/home.scss';
 import { Link } from 'react-router-dom';
 
+import Preloader from './loader';
+
 export default function Home() {
     const [donnees, setDonnees] = useState([]);
     const [imageAffichee, setImageAffichee] = useState(0);
@@ -19,6 +21,7 @@ export default function Home() {
 
     return (
         <div className="home">
+            <Preloader />
             <div className="header fontspe">
                 <p>RR</p>
             </div>
