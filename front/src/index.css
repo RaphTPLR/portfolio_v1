@@ -4,7 +4,7 @@ html {
   box-sizing: border-box;
   font-size: 16px;
   font-family: 'Karantina', system-ui;
-  cursor: default;
+  cursor: crosshair;
 }
 
 *, *:before, *:after {
@@ -26,9 +26,17 @@ img {
   height: auto;
 }
 
+a {
+  text-decoration: none;
+  color: var(--color-font);
+  cursor: crosshair;
+}
+
 :root {
   --color-background: #0C0C0C;
   --color-font: #FFF;
+  --color-black: #000;
   --color-black-50: #0c0c0c80;
   --color-green: #44ff0033;
+  --color-green-border: #3b8022;
 }

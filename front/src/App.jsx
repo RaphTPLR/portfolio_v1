@@ -4,14 +4,14 @@ import { Route, Routes } from "react-router-dom";
 // import { gsap } from 'gsap';
 
 import Home from './components/home'
-import Pokedex from './views/pokedex'
+import Details from './views/details'
 
 function App() {
     return (
       <>
         <Routes>
             <Route path="/" element={ <Home /> }></Route>
-            <Route path="/Pokedex" element={ <Pokedex /> }></Route>
+            <Route path="/:name" element={ <Details /> }></Route>
         </Routes>
       </>
     )
