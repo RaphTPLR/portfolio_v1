@@ -4,7 +4,6 @@ html {
   box-sizing: border-box;
   font-size: 16px;
   font-family: 'Karantina', system-ui;
-  cursor: crosshair;
 }
 
 *, *:before, *:after {
@@ -29,10 +28,10 @@ img {
 a {
   text-decoration: none;
   color: var(--color-font);
-  cursor: crosshair;
 }
 
 :root {
+  cursor: none;
   --color-background: #0C0C0C;
   --color-font: #FFF;
   --color-black: #000;

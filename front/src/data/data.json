@@ -11,7 +11,8 @@
       "type": "Vitrine - Collection",
       "role": "Dev front-end",
       "collab": "Rémi Korzeniowski",
-      "path": "/Pokedex"
+      "path": "/Pokedex",
+      "date": "November, 2023" 
     },
     {
         "id": 2,
@@ -25,7 +26,8 @@
         "type": "Application Web",
         "role": "Dev fullstack",
         "collab": "/",
-        "path": "/AVG-Challenge"
+        "path": "/AVG-Challenge",
+        "date": "August, 2023" 
       },
       {
         "id": 3,

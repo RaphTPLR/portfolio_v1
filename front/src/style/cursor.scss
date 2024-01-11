@@ -1,0 +1,12 @@
+.custom-cursor {
+    position: relative;
+    z-index: 99999999;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    position: fixed;
+    pointer-events: none;
+    mix-blend-mode: difference;
+  }
+  

@@ -38,6 +38,18 @@ export default function Details() {
     }
   }, [url, donnees, item]);
 
+  let first, last;
+
+  if (item.name.indexOf(" ") !== -1) {
+    const parts = item.name.split(" ");
+    first = parts[0].slice(0, 5);
+    last = parts[1] ? parts[1].slice(0, 5) : '';
+  } else {
+    const middle = Math.ceil(item.name.length / 2);
+    first = item.name.slice(0, middle).slice(0, 5);
+    last = item.name.slice(middle).slice(0, 5);
+  }
+
     return (
       <div className="pokedex">
         <div className="step1">
@@ -52,10 +64,9 @@ export default function Details() {
               <div className="left-i">
                 <div className="index">
                   {/* {item.id !== undefined ? 
-                  <p>0{item.id}/0{donnees.length} - {item.name}</p>
-                  : ""
-                } */}
-                  <p>01/09 - POKEDEX</p>
+                    <p>0{item.id}/0{donnees.length} - {item.name}</p>
+                    : ""
+                  } */}
                 </div>
                 <div className="batterie">
                   <img src={Batterie} alt="" />
@@ -70,43 +81,45 @@ export default function Details() {
               </div>
             <div className="date">
               {/* <p>{item.date}</p> */}
-              <p>NOVEMBER 2023</p>
             </div>
           </div>
           <div className="content">
             <div className="left">
-              {/* <span>{item.name}</span> */}
-              <span>POKE</span>
+              <span>{first}</span>
             </div>
             <div className="mid">
               <div className="blur-bg"></div>
               <div className="camera-filter">
-                <div className="image"></div>
+                <div className="image"
+                // style={{
+                //   backgroundImage: `url(${item.images[0]})`,
+                // }}
+                ></div>
               </div>
             </div>
             <div className="right">
               <div className="text">
                 <p>STEP 1 - HOME</p>
               </div>
-              <span>DEX</span>
+              <span>{last}</span>
             </div>
           </div>
           <div className="footer">
             <div className="client">
               <p>Client</p>
-              <p>IPSSI PARIS</p>
+              {/* <p>{item.client}</p> */}
             </div>
             <div className="type">
               <p>Type</p>
-              <p>Vitrine - Collection</p>
+              {/* <p>{item.type}</p> */}
             </div>
             <div className="role">
               <p>Role</p>
-              <p>Dev Front-end</p>
+              {/* <p>{item.role}</p> */}
             </div>
             <div className="with">
               <p>with</p>
-              <p>Rémi Korzeniowski</p>
+              {/* <p>{item.collab}</p> */}
             </div>
           </div>
         </div>

@@ -68,7 +68,7 @@
 
             .left-i {
                 display: flex;
-                width: 12vw;
+                width: 14vw;
                 justify-content: space-between;
                 align-items: center;
             }
@@ -179,10 +179,8 @@
 
                     .image {
                         z-index: 1;
-                        background-color: red;
                         height: 45vh;
                         width: 47vw;
-                        background-image: url(https://images7.alphacoders.com/592/592678.jpg);
                         background-position: center;
                         background-size: cover;
                         filter: grayscale(80%);
