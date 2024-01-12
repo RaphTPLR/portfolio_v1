@@ -38,17 +38,17 @@ export default function Details() {
     }
   }, [url, donnees, item]);
 
-  let first, last;
+  // let first, last;
 
-  if (item.name.indexOf(" ") !== -1) {
-    const parts = item.name.split(" ");
-    first = parts[0].slice(0, 5);
-    last = parts[1] ? parts[1].slice(0, 5) : '';
-  } else {
-    const middle = Math.ceil(item.name.length / 2);
-    first = item.name.slice(0, middle).slice(0, 5);
-    last = item.name.slice(middle).slice(0, 5);
-  }
+  // if (item.name.indexOf(" ") !== -1) {
+  //   const parts = item.name.split(" ");
+  //   first = parts[0].slice(0, 5);
+  //   last = parts[1] ? parts[1].slice(0, 5) : '';
+  // } else {
+  //   const middle = Math.ceil(item.name.length / 2);
+  //   first = item.name.slice(0, middle).slice(0, 5);
+  //   last = item.name.slice(middle).slice(0, 5);
+  // }
 
     return (
       <div className="pokedex">
@@ -85,7 +85,7 @@ export default function Details() {
           </div>
           <div className="content">
             <div className="left">
-              <span>{first}</span>
+              {/* <span>{first}</span> */}
             </div>
             <div className="mid">
               <div className="blur-bg"></div>
@@ -101,7 +101,7 @@ export default function Details() {
               <div className="text">
                 <p>STEP 1 - HOME</p>
               </div>
-              <span>{last}</span>
+              {/* <span>{last}</span> */}
             </div>
           </div>
           <div className="footer">

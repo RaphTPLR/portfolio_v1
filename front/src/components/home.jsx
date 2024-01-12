@@ -2,7 +2,6 @@ import React, { useState, useEffect, useRef } from "react";
 import "../style/home.scss";
 import { Link } from "react-router-dom";
 
-import Preloader from "./loader";
 import BtnL from "../assets/right-arrow-alt-regular-24.png";
 
 export default function Home() {
@@ -44,7 +43,6 @@ export default function Home() {
 
   return (
     <div className="home">
-      <Preloader />
       <div className="header fontspe">
         <p>RR</p>
       </div>

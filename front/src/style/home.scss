@@ -52,10 +52,6 @@
         img {
             filter: grayscale(100%);
         }
-        
-        // &>div {
-        //     cursor: pointer;
-        // }
 
         .image-div {
             position: relative;
@@ -65,7 +61,6 @@
             // opacity: 0.5;
             width: 100%;
             margin: 1rem 0;
-            // cursor: pointer;
             transition: all .3s ease-in-out;
             overflow: hidden;
             // scroll-snap-align: center;
@@ -190,7 +185,6 @@
                 background-color: #fff;
                 height: 100%;
                 width: .3rem;
-                // cursor: pointer;
             }
 
             .name {
