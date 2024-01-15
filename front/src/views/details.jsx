@@ -35,11 +35,21 @@ export default function Details() {
     }, [url, donnees, item]);
     return (
       <div className="details">
-        {item ? (
+        <div className="presentation">
+          {item ? <img src={item.images[0]} alt="" /> : ""}
+          <div className="header fontspe">
+            <p>RR</p>
+          </div>
+          <div className="content"></div>
+        </div>
+        <div className="bloc bloc1">
+
+        </div>
+        {/* {item ? (
             <p>{item.name}</p>
           ) : (
             <p></p>
-          )}
+          )} */}
       </div>
     )
 }

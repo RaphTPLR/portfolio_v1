@@ -1,4 +1,60 @@
+// body {
+//     overflow-y: scroll;
+
+//     &::-webkit-scrollbar {
+//         display: none;
+//     }
+// }
+
 .details {
+    background-color: blue;
     width: 100vw;
-    height: auto;
+    height: 100vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    .presentation {
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        filter: grayscale(70%);
+
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+        }
+
+        .header {
+            z-index: 999;
+            width: 100vw;
+            height: 15vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all .3s ease-in-out;
+            font-size: 3rem;
+        }
+
+        .content {
+            height: 85vh;
+            width: 100vw;
+        }
+    }
+
+    .bloc {
+        background-color: green;
+        width: 100vw;
+        height: 50vh;
+    }
 }
