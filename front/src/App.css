@@ -7,3 +7,31 @@ body {
   color: var(--color-font);
   overflow: hidden;
 }
+
+.lightmode {
+  background-color: var(--color-bg-light);
+  color: var(--color-background);
+
+}
+
+.darkmode {
+  background-color: var(--color-background);
+  color: var(--color-font);
+}
+
+.body {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+}
+
+.body .darkmode-btn {
+  position: absolute;
+  height: 1.5rem;
+  width: 1.5rem;
+  background-color: var(--color-bg-light);
+  border-radius: 2rem;
+  top: 2rem;
+  right: 2rem;
+  transition: all .3s ease-in-out;
+}

@@ -33,10 +33,11 @@ a {
 
 :root {
   cursor: none;
-  --color-background: #0C0C0C;
+  --color-background: rgb(12, 12, 12);
   --color-font: #FFF;
   --color-black: #000;
   --color-black-50: #0c0c0c80;
   --color-green: #44ff0033;
   --color-green-border: #3b8022;
+  --color-bg-light: #f0f8ff;
 }

@@ -3,11 +3,14 @@ import "../style/home.scss";
 import { Link } from "react-router-dom";
 
 import BtnL from "../assets/right-arrow-alt-regular-24.png";
+import Cursor from '../components/cursor';
 
-export default function Home() {
-    const [donnees, setDonnees] = useState([]);
-    const [imageAffichee, setImageAffichee] = useState();
-    const [textAnimation, setTextAnimation] = useState(null);
+
+export default function Home({ darkMode, toggleDarkMode }) {
+  const [donnees, setDonnees] = useState([]);
+  const [imageAffichee, setImageAffichee] = useState();
+  const [textAnimation, setTextAnimation] = useState(null);
+  const [lightMode, setLightMode] = useState(true);
     const containerRef = useRef(null);
 
   useEffect(() => {
@@ -41,8 +44,17 @@ export default function Home() {
     setTextAnimation("enter");
   };
 
+  const handleDarkModeClick = () => {
+    setLightMode(!lightMode);
+    toggleDarkMode(!darkMode);
+  };
+  
+
+
   return (
-    <div className="home">
+    <div className={`home ${lightMode ? 'darkmode' : 'lightmode'}`}>
+      <div className="darkmode-btn" onClick={() => handleDarkModeClick()}></div>
+      <Cursor darkMode={darkMode} />
       <div className="header fontspe">
         <p>RR</p>
       </div>

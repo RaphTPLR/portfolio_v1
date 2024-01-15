@@ -6,7 +6,7 @@ class Point {
     this.y = y;
     this.lifetime = 0;
     this.size = 4;
-    this.color = { r: 255, g: 255, b: 255 };
+    this.color = { r: 240, g: 248, b: 255 };
   }
 }
 
@@ -74,43 +74,58 @@ class Canvas extends React.Component {
     const animatePoints = () => {
       ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height);
       const duration = (0.7 * (1 * 1000)) / 60;
-
+    
       for (let i = 0; i < points.length; ++i) {
         const point = points[i];
         let lastPoint;
-
+    
         if (points[i - 1] !== undefined) {
           lastPoint = points[i - 1];
         } else lastPoint = point;
-
+    
         point.lifetime += 1;
-
+    
         if (point.lifetime > duration) {
           points.shift();
         } else {
           const lifePercent = point.lifetime / duration;
           const spreadRate = 7 * (1 - lifePercent);
-
+    
           ctx.lineJoin = "round";
           ctx.lineWidth = spreadRate;
-
-          ctx.strokeStyle = `rgb(${point.color.r},${point.color.g},${point.color.b})`;
+    
+          const cursorColor = this.props.darkMode ? 'rgb(240, 248, 255)' : 'rgb(12, 12, 12)';
+          ctx.strokeStyle = cursorColor;
           ctx.lineWidth = point.size;
-
+    
           ctx.beginPath();
-
+    
           ctx.moveTo(lastPoint.x, lastPoint.y);
           ctx.lineTo(point.x, point.y);
-
+    
           ctx.stroke();
           ctx.closePath();
         }
       }
       requestAnimationFrame(animatePoints);
     };
+    
 
     animatePoints();
   };
+
+  componentDidUpdate(prevProps) {
+    if (prevProps.darkMode !== this.props.darkMode) {
+      this.updateCursorColor();
+    }
+  }
+
+  updateCursorColor = () => {
+    const cursorColor = this.props.darkMode ? 'rgb(255, 255, 255)' : 'rgb(0, 0, 0)';
+    // Adjust the cursor color logic based on your requirements
+    // Use this cursor color in your animation logic or wherever needed
+  };
+
 
   render = () => {
     const { cHeight, cWidth } = this.state;
