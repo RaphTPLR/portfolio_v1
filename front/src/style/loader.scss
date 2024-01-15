@@ -13,12 +13,13 @@
 }
 
 .preloader.loading {
-    opacity: 1;
+    top: 0;
+    left: 0;
     z-index: 9999;
 }
 
 .preloader.loaded {
-    transition: all .3s ease-in-out;
-    opacity: 0;
+    transition: all 2s linear;
+    top: 200vh;
     z-index: -9999;
 }

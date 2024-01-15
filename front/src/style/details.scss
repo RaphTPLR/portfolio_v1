@@ -1,4 +1,52 @@
 .details {
     width: 100vw;
     height: auto;
+    overflow: scroll;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+    
+    .top-content {
+        position: relative;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        
+        img {
+            z-index: -1;
+            position: absolute;
+            top: 0;
+            left: 0;
+            min-height: 100%;
+            min-width: 100%;
+        }
+
+        .header {
+            width: 100vw;
+            height: 15vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all .3s ease-in-out;
+            font-size: 3rem;
+        }
+
+        .content {
+            height: 85vh;
+        }
+    }
+    
+    .step1-details {
+        background-color: red;
+        height: 30vh;
+        width: 100vw;
+
+        .image {
+            background-color: blue;
+            height: 30vh;
+            margin: 2rem;
+        }
+    }
 }
