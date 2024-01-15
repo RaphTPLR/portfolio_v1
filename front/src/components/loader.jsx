@@ -13,7 +13,7 @@ export default function Preloader() {
         setLoading(false);
         clearInterval(interval);
       }
-    }, 20);
+    }, 30);
 
     return () => clearInterval(interval);
   }, [progress]);
