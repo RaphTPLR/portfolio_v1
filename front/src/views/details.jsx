@@ -48,6 +48,13 @@ export default function Details() {
             </div>
             <div className="content">
               {item ?
+               <div className='name'>
+                <h1>{item.name}</h1>
+               </div> 
+               : 
+               ""
+              }
+              {item ?
                 <div className="text">
                   <div className="each">
                     <p>TYPE</p>
@@ -109,8 +116,8 @@ export default function Details() {
           <div className="prev-page">
             {item ? <img src={donnees[item.id - 2].images[0]} alt="" /> : ""}
             {item ? <Link to={donnees[item.id - 2].path}>
-              <h2>NEXT PROJECT</h2>
-              <p>{item ? donnees[item.id].name : ""} <img src={BtnL} alt="" /></p>
+              <h2>PREVIOUS PROJECT</h2>
+              <p><img src={BtnL} alt="" style={{transform: "rotate(180deg)"}}/>{item ? donnees[item.id - 2].name : ""}</p>
             </Link> : ""}
           </div>
           :

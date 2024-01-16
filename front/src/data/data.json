@@ -39,15 +39,22 @@
         "name": "AVG Challenge",
         "images": [
           "https://staticg.sportskeeda.com/editor/2023/07/feaac-16900539267765-1920.jpg",
-          "https://staticg.sportskeeda.com/editor/2023/07/feaac-16900539267765-1920.jpg",
-          "https://staticg.sportskeeda.com/editor/2023/07/feaac-16900539267765-1920.jpg"
+          "https://i.goopics.net/98hy5w.png",
+          "https://i.goopics.net/loszvj.png",
+          "https://i.goopics.net/pcv55v.png",
+          "https://i.goopics.net/y867bq.png",
+          "https://i.goopics.net/wgjhgb.png",
+          "https://i.goopics.net/xneauv.png",
+          "https://i.goopics.net/cnksau.png"
         ],
         "titres": [
-          "LOADING PAGE",
+          "GREET PAGE",
+          "CHALLENGE PAGE",
           "HOME PAGE",
-          "POKEDEX PAGE",
-          "HOME PAGE (CATCHED)",
-          "DETAILS PAGE"
+          "AVERAGE PAGE",
+          "SCORES PAGE",
+          "HELP PAGE",
+          "SETTINGS PAGE"
         ],
         "description": [
           "Our loading page is displayed until all our pokemons are loaded. It lasts 5-10 seconds on average.",
@@ -74,11 +81,28 @@
           "https://motionbgs.com/media/1039/rayquaza-flying-in-the-dark-sky.jpg",
           "https://motionbgs.com/media/1039/rayquaza-flying-in-the-dark-sky.jpg"
         ],
+        "titres": [
+          "LOADING PAGE",
+          "HOME PAGE",
+          "POKEDEX PAGE",
+          "HOME PAGE (CATCHED)",
+          "DETAILS PAGE"
+        ],
+        "description": [
+          "Our loading page is displayed until all our pokemons are loaded. It lasts 5-10 seconds on average.",
+          "All available pokemons can be found on this page. You can sort them alphabetically, by type and by ID. You can also add pokemons to your collection by clicking on the pokeball next to their name.",
+          "This is where you'll find your pokemon collection. Some information about them, such as name or ID, is available. You can release them by clicking on the Remove button.",
+          "When you have a pokemon in your collection, the pokeball next to its name changes as an indication.",
+          "This is where you'll find most of the information about each pokemon. You open this page by clicking on the pokemon you want on the Home page. You can find types, stats, ID, description and attacks."
+        ],
         "client": "Ipssi - Paris",
         "type": "Vitrine - Collection",
         "role": "Dev front-end",
+        "techno": "ReactJS, NodeJS, SASS, AXIOS, ExpressJS",
         "collab": "Rémi Korzeniowski",
-        "path": "/Scamerz"
+        "path": "/Scamerz",
+        "date": "November, 2023",
+        "timedev": "2 Days"
       },
       {
         "id": 4,
@@ -88,11 +112,29 @@
           "https://motionbgs.com/media/1039/rayquaza-flying-in-the-dark-sky.jpg",
           "https://motionbgs.com/media/1039/rayquaza-flying-in-the-dark-sky.jpg"
         ],
+        "titres": [
+          "LOADING PAGE",
+          "HOME PAGE",
+          "POKEDEX PAGE",
+          "HOME PAGE (CATCHED)",
+          "DETAILS PAGE"
+        ],
+        "description": [
+          "Our loading page is displayed until all our pokemons are loaded. It lasts 5-10 seconds on average.",
+          "All available pokemons can be found on this page. You can sort them alphabetically, by type and by ID. You can also add pokemons to your collection by clicking on the pokeball next to their name.",
+          "This is where you'll find your pokemon collection. Some information about them, such as name or ID, is available. You can release them by clicking on the Remove button.",
+          "When you have a pokemon in your collection, the pokeball next to its name changes as an indication.",
+          "This is where you'll find most of the information about each pokemon. You open this page by clicking on the pokemon you want on the Home page. You can find types, stats, ID, description and attacks."
+        ],
         "client": "Ipssi - Paris",
         "type": "Vitrine",
         "role": "Dev fullstack",
+        "techno": "PHP, SASS",
         "collab": "Rémi Korzeniowski",
-        "path": "/Marmiton"
+        "path": "/Marmiton",
+        "date": "December, 2023",
+        "timedev": "2 Days",
+        "link": "https://avg-challenge.com/"
       },
       {
         "id": 5,
@@ -102,11 +144,29 @@
           "https://motionbgs.com/media/1039/rayquaza-flying-in-the-dark-sky.jpg",
           "https://motionbgs.com/media/1039/rayquaza-flying-in-the-dark-sky.jpg"
         ],
+        "titres": [
+          "LOADING PAGE",
+          "HOME PAGE",
+          "POKEDEX PAGE",
+          "HOME PAGE (CATCHED)",
+          "DETAILS PAGE"
+        ],
+        "description": [
+          "Our loading page is displayed until all our pokemons are loaded. It lasts 5-10 seconds on average.",
+          "All available pokemons can be found on this page. You can sort them alphabetically, by type and by ID. You can also add pokemons to your collection by clicking on the pokeball next to their name.",
+          "This is where you'll find your pokemon collection. Some information about them, such as name or ID, is available. You can release them by clicking on the Remove button.",
+          "When you have a pokemon in your collection, the pokeball next to its name changes as an indication.",
+          "This is where you'll find most of the information about each pokemon. You open this page by clicking on the pokemon you want on the Home page. You can find types, stats, ID, description and attacks."
+        ],
         "client": "Ipssi - Paris",
         "type": "Vitrine - Collection - Opening",
         "role": "Dev front-end",
+        "techno": "ReactJS, NodeJS, PHP, SASS, API YU-GI-OH, AXIOS, ExpressJS",
         "collab": "4 devs Team",
-        "path": "/CarteX"
+        "path": "/CarteX",
+        "date": "December, 2023",
+        "timedev": "4 Days",
+        "link": "https://avg-challenge.com/"
       },
       {
         "id": 6,
@@ -116,11 +176,29 @@
           "https://motionbgs.com/media/1039/rayquaza-flying-in-the-dark-sky.jpg",
           "https://motionbgs.com/media/1039/rayquaza-flying-in-the-dark-sky.jpg"
         ],
+        "titres": [
+          "LOADING PAGE",
+          "HOME PAGE",
+          "POKEDEX PAGE",
+          "HOME PAGE (CATCHED)",
+          "DETAILS PAGE"
+        ],
+        "description": [
+          "Our loading page is displayed until all our pokemons are loaded. It lasts 5-10 seconds on average.",
+          "All available pokemons can be found on this page. You can sort them alphabetically, by type and by ID. You can also add pokemons to your collection by clicking on the pokeball next to their name.",
+          "This is where you'll find your pokemon collection. Some information about them, such as name or ID, is available. You can release them by clicking on the Remove button.",
+          "When you have a pokemon in your collection, the pokeball next to its name changes as an indication.",
+          "This is where you'll find most of the information about each pokemon. You open this page by clicking on the pokemon you want on the Home page. You can find types, stats, ID, description and attacks."
+        ],
         "client": "MET France",
         "type": "Application Web",
         "role": "Dev front-end",
-        "collab": "TheCodingMachine",
-        "path": "/MET"
+        "techno": "VueJS, Typescript, SASS",
+        "collab": "TheCodingMachine (Stage)",
+        "path": "/MET",
+        "date": "August, 2023",
+        "timedev": "5 Weeks",
+        "link": "https://fr.met.com/fr/"
       },
       {
         "id": 7,
@@ -130,11 +208,28 @@
           "https://motionbgs.com/media/1039/rayquaza-flying-in-the-dark-sky.jpg",
           "https://motionbgs.com/media/1039/rayquaza-flying-in-the-dark-sky.jpg"
         ],
+        "titres": [
+          "LOADING PAGE",
+          "HOME PAGE",
+          "POKEDEX PAGE",
+          "HOME PAGE (CATCHED)",
+          "DETAILS PAGE"
+        ],
+        "description": [
+          "Our loading page is displayed until all our pokemons are loaded. It lasts 5-10 seconds on average.",
+          "All available pokemons can be found on this page. You can sort them alphabetically, by type and by ID. You can also add pokemons to your collection by clicking on the pokeball next to their name.",
+          "This is where you'll find your pokemon collection. Some information about them, such as name or ID, is available. You can release them by clicking on the Remove button.",
+          "When you have a pokemon in your collection, the pokeball next to its name changes as an indication.",
+          "This is where you'll find most of the information about each pokemon. You open this page by clicking on the pokemon you want on the Home page. You can find types, stats, ID, description and attacks."
+        ],
         "client": "Ipssi - Paris",
         "type": "Vitrine",
         "role": "Dev front-end",
+        "techno": "ReactJS, SASS",
         "collab": "/",
-        "path": "/W"
+        "path": "/W",
+        "date": "August, 2023",
+        "timedev": "1 Day"
       },
       {
         "id": 8,
@@ -144,25 +239,60 @@
           "https://motionbgs.com/media/1039/rayquaza-flying-in-the-dark-sky.jpg",
           "https://motionbgs.com/media/1039/rayquaza-flying-in-the-dark-sky.jpg"
         ],
+        "titres": [
+          "LOADING PAGE",
+          "HOME PAGE",
+          "POKEDEX PAGE",
+          "HOME PAGE (CATCHED)",
+          "DETAILS PAGE"
+        ],
+        "description": [
+          "Our loading page is displayed until all our pokemons are loaded. It lasts 5-10 seconds on average.",
+          "All available pokemons can be found on this page. You can sort them alphabetically, by type and by ID. You can also add pokemons to your collection by clicking on the pokeball next to their name.",
+          "This is where you'll find your pokemon collection. Some information about them, such as name or ID, is available. You can release them by clicking on the Remove button.",
+          "When you have a pokemon in your collection, the pokeball next to its name changes as an indication.",
+          "This is where you'll find most of the information about each pokemon. You open this page by clicking on the pokemon you want on the Home page. You can find types, stats, ID, description and attacks."
+        ],
         "client": "Personnal",
         "type": "Vitrine",
         "role": "Dev front-end",
+        "techno": "HTML, CSS, FULL VANILLA",
         "collab": "/",
-        "path": "/Spotify"
+        "path": "/Spotify",
+        "date": "August, 2023",
+        "timedev": "1 Day"
       },
       {
         "id": 9,
-        "name": "LeagIn",
+        "name": "SOON",
         "images": [
           "https://wallpapercave.com/wp/wp2349503.jpg",
           "https://motionbgs.com/media/1039/rayquaza-flying-in-the-dark-sky.jpg",
           "https://motionbgs.com/media/1039/rayquaza-flying-in-the-dark-sky.jpg"
         ],
+        "titres": [
+          "LOADING PAGE",
+          "HOME PAGE",
+          "POKEDEX PAGE",
+          "HOME PAGE (CATCHED)",
+          "DETAILS PAGE"
+        ],
+        "description": [
+          "Our loading page is displayed until all our pokemons are loaded. It lasts 5-10 seconds on average.",
+          "All available pokemons can be found on this page. You can sort them alphabetically, by type and by ID. You can also add pokemons to your collection by clicking on the pokeball next to their name.",
+          "This is where you'll find your pokemon collection. Some information about them, such as name or ID, is available. You can release them by clicking on the Remove button.",
+          "When you have a pokemon in your collection, the pokeball next to its name changes as an indication.",
+          "This is where you'll find most of the information about each pokemon. You open this page by clicking on the pokemon you want on the Home page. You can find types, stats, ID, description and attacks."
+        ],
         "client": "Personnal",
         "type": "Application Web & Mobile",
         "role": "Dev front-end - Conception",
+        "techno": "ReactJS, SASS, FIGMA",
         "collab": "Kilian Trouet",
-        "path": "/LeagIn"
+        "path": "/LeagIn",
+        "date": "December, 2023",
+        "timedev": "1 Month",
+        "link": "https://avg-challenge.com/"
       }
   ]
   

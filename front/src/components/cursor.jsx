@@ -6,7 +6,7 @@ class Point {
     this.y = y;
     this.lifetime = 0;
     this.size = 4;
-    this.color = { r: 240, g: 248, b: 255 };
+    this.color = { r: 255, g: 255, b: 255 };
   }
 }
 
@@ -94,7 +94,7 @@ class Canvas extends React.Component {
           ctx.lineJoin = "round";
           ctx.lineWidth = spreadRate;
     
-          const cursorColor = this.props.darkMode ? 'rgb(240, 248, 255)' : 'rgb(12, 12, 12)';
+          const cursorColor = this.props.darkMode ? 'rgb(255, 255, 255)' : 'rgb(12, 12, 12)';
           ctx.strokeStyle = cursorColor;
           ctx.lineWidth = point.size;
     

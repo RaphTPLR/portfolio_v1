@@ -1,11 +1,3 @@
-// body {
-//     overflow-y: scroll;
-
-//     &::-webkit-scrollbar {
-//         display: none;
-//     }
-// }
-
 .details {
     width: 100vw;
     height: 100vh;
@@ -54,6 +46,19 @@
             flex-direction: column;
             justify-content: end;
             align-items: center;
+
+            .name {
+                height: 77vh;
+                width: 100vw;
+                display: grid;
+                place-items: center;
+                font-size: 4rem;
+
+                h1 {
+                    font-family: 'Karantina', system-ui;
+                    letter-spacing: 3rem;
+                }
+            }
             
             
             .text {
@@ -115,11 +120,19 @@
             display: flex;
             align-items: center;
 
-             img {
-                width: 100%;
-                opacity: .7;
-                filter: grayscale(50%);
-             }
+            img {
+            width: 100%;
+            opacity: .7;
+            filter: grayscale(50%);
+            transition: all .3s ease-in-out;
+
+            }
+
+            &:hover {
+                img {
+                    filter: grayscale(0);
+                }
+            }
         }
 
         .text {
@@ -159,6 +172,8 @@
             position: absolute;
             z-index: 1;
             filter: grayscale(70%);
+            width: 100vw;
+            opacity: .5;
         }
 
         a {
@@ -174,16 +189,21 @@
 
         h2 {
             font-size: 2.5rem;
+            letter-spacing: .5rem;
         }
-
+        
         p {
             display: flex;
             align-items: center;
             transition: all .3s ease-in-out;
+            font-weight: "lato", sans-serif;
+            letter-spacing: 1rem;
 
             img {
                 position: relative;
                 height: 1.5rem;
+                width: auto;
+                opacity: 1;
             }
         }
     }
