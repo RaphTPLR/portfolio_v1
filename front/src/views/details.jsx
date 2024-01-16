@@ -104,13 +104,24 @@ export default function Details() {
             </div>
           ))}
       </div>
-      <div className="next-page">
-        {item ? <img src={donnees[item.id].images[0]} alt="" /> : ""}
-        {item ? <Link to={donnees[item.id].path}>
-          <h2>NEXT PROJECT</h2>
-          <p>{item ? donnees[item.id].name : ""} <img src={BtnL} alt="" /></p>
-        </Link> : ""}
+        {item &&
+          item.id === donnees.length ?
+          <div className="prev-page">
+            {item ? <img src={donnees[item.id - 2].images[0]} alt="" /> : ""}
+            {item ? <Link to={donnees[item.id - 2].path}>
+              <h2>NEXT PROJECT</h2>
+              <p>{item ? donnees[item.id].name : ""} <img src={BtnL} alt="" /></p>
+            </Link> : ""}
+          </div>
+          :
+          <div className="next-page">
+            {item ? <img src={donnees[item.id].images[0]} alt="" /> : ""}
+            {item ? <Link to={donnees[item.id].path}>
+              <h2>NEXT PROJECT</h2>
+              <p>{item ? donnees[item.id].name : ""} <img src={BtnL} alt="" /></p>
+            </Link> : ""}
+          </div>
+        }
       </div>
-    </div>
   );
 }

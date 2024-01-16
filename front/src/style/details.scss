@@ -57,7 +57,7 @@
             
             
             .text {
-                height: 6vh;
+                height: 8vh;
                 width: 100vw;
                 justify-content: space-around;
                 display: flex;
@@ -73,7 +73,7 @@
             .each {
                 display: flex;
                 flex-direction: column;
-                justify-content: space-between;
+                height: 8vh;
             }
 
             p {
@@ -82,9 +82,10 @@
             }
             
             span {
-                margin: 0 2rem;
+                margin: 2rem;
                 font-size: .8rem;
                 font-weight: 300;
+                color: var(--color-gray);
             }
             .scroll-down {
                 margin-bottom: 2rem;
@@ -139,14 +140,14 @@
             p {
                 font-size: 1.1rem;
                 margin: 0 5rem;
+                color: var(--color-gray);
             }
         }
     }
 
-    .next-page {
+    .next-page, .prev-page {
         position: relative;
-        background-color: red;
-        margin: 5rem 0;
+        margin-top: 5rem;
         height: 50vh;
         width: 100vw;
         overflow: hidden;

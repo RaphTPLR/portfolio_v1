@@ -27,11 +27,11 @@
       "client": "Ipssi - Paris",
       "type": "Vitrine - Collection",
       "role": "Dev front-end",
-      "techno": "React",
+      "techno": "ReactJS, SASS, API POKEMON, AXIOS",
       "collab": "Rémi Korzeniowski",
       "path": "/Pokedex",
       "date": "November, 2023",
-      "timedev": "2 days",
+      "timedev": "2 Days",
       "link": "https://pokedex.raphael-romero.com/"
     },
     {
@@ -42,12 +42,29 @@
           "https://staticg.sportskeeda.com/editor/2023/07/feaac-16900539267765-1920.jpg",
           "https://staticg.sportskeeda.com/editor/2023/07/feaac-16900539267765-1920.jpg"
         ],
+        "titres": [
+          "LOADING PAGE",
+          "HOME PAGE",
+          "POKEDEX PAGE",
+          "HOME PAGE (CATCHED)",
+          "DETAILS PAGE"
+        ],
+        "description": [
+          "Our loading page is displayed until all our pokemons are loaded. It lasts 5-10 seconds on average.",
+          "All available pokemons can be found on this page. You can sort them alphabetically, by type and by ID. You can also add pokemons to your collection by clicking on the pokeball next to their name.",
+          "This is where you'll find your pokemon collection. Some information about them, such as name or ID, is available. You can release them by clicking on the Remove button.",
+          "When you have a pokemon in your collection, the pokeball next to its name changes as an indication.",
+          "This is where you'll find most of the information about each pokemon. You open this page by clicking on the pokemon you want on the Home page. You can find types, stats, ID, description and attacks."
+        ],
         "client": "Personnal",
         "type": "Application Web",
         "role": "Dev fullstack",
+        "techno": "VueJS, NodeJS, SASS, API DISCORD, AXIOS, ExpressJS, Sequelize",
         "collab": "/",
         "path": "/AVG-Challenge",
-        "date": "August, 2023" 
+        "date": "August, 2023",
+        "timedev": "6 Weeks",
+        "link": "https://avg-challenge.com/"
       },
       {
         "id": 3,
