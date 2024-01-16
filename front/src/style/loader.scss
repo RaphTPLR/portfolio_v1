@@ -8,19 +8,21 @@
         position: absolute;
         top: 50%;
         left: 48%;
-        font-size: 3rem;
+        font-size: 2rem;
     }
 }
 
 .preloader.loading {
     top: 0;
     z-index: 9999;
-    opacity: 1;
 }
 
 .preloader.loaded {
-    transition: all 1.5s ease-in-out;
-    top: 200vh;
+    transition: all 8s linear;
+    top: 2000vh;
     z-index: -9999;
-    opacity: 0;
+}
+
+.preloader.end {
+    display: none;
 }

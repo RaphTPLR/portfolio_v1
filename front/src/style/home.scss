@@ -1,6 +1,7 @@
 .home {
     position: relative;
     height: 100vh;
+    max-height: 100vh;
     width: 100vw;
     transition: all .3s ease-in-out;
     overflow: hidden;

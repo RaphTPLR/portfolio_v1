@@ -4,6 +4,7 @@ import '../style/loader.scss';
 export default function Preloader() {
   const [loading, setLoading] = useState(true);
   const [progress, setProgress] = useState(0);
+  const [status, setStatus] = useState("loading");
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -11,15 +12,22 @@ export default function Preloader() {
         setProgress((prevProgress) => prevProgress + 1);
       } else {
         setLoading(false);
+        setStatus("loaded");
         clearInterval(interval);
+
+        setTimeout(() => {
+          setStatus("end");
+        }, 1000);
       }
     }, 20);
 
     return () => clearInterval(interval);
   }, [progress]);
 
+  const preloaderClass = `preloader ${status === 'loading' ? 'loading' : status === 'loaded' ? 'loaded' : 'end'}`;
+
   return (
-    <div className={`preloader ${loading ? 'loading' : 'loaded'}`}>
+    <div className={preloaderClass}>
       <div className="progress-bar">
         <p className='fontspe'>{progress}</p>
       </div>
