@@ -4,15 +4,35 @@
       "name": "Pokedex",
       "images": [
         "https://motionbgs.com/media/1039/rayquaza-flying-in-the-dark-sky.jpg",
-        "https://motionbgs.com/media/1039/rayquaza-flying-in-the-dark-sky.jpg",
-        "https://motionbgs.com/media/1039/rayquaza-flying-in-the-dark-sky.jpg"
+        "https://image.noelshack.com/fichiers/2024/03/2/1705403999-loadingpage.png",
+        "https://image.noelshack.com/fichiers/2024/03/2/1705403999-homepage.jpg",
+        "https://image.noelshack.com/fichiers/2024/03/2/1705403999-pokedexpage.png",
+        "https://image.noelshack.com/fichiers/2024/03/2/1705403999-capture-homepage.jpg",
+        "https://image.noelshack.com/fichiers/2024/03/2/1705403999-detailspage.png"
+      ],
+      "titres": [
+        "LOADING PAGE",
+        "HOME PAGE",
+        "POKEDEX PAGE",
+        "HOME PAGE (CATCHED)",
+        "DETAILS PAGE"
+      ],
+      "description": [
+        "Our loading page is displayed until all our pokemons are loaded. It lasts 5-10 seconds on average.",
+        "All available pokemons can be found on this page. You can sort them alphabetically, by type and by ID. You can also add pokemons to your collection by clicking on the pokeball next to their name.",
+        "This is where you'll find your pokemon collection. Some information about them, such as name or ID, is available. You can release them by clicking on the Remove button.",
+        "When you have a pokemon in your collection, the pokeball next to its name changes as an indication.",
+        "This is where you'll find most of the information about each pokemon. You open this page by clicking on the pokemon you want on the Home page. You can find types, stats, ID, description and attacks."
       ],
       "client": "Ipssi - Paris",
       "type": "Vitrine - Collection",
       "role": "Dev front-end",
+      "techno": "React",
       "collab": "Rémi Korzeniowski",
       "path": "/Pokedex",
-      "date": "November, 2023" 
+      "date": "November, 2023",
+      "timedev": "2 days",
+      "link": "https://pokedex.raphael-romero.com/"
     },
     {
         "id": 2,

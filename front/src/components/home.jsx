@@ -56,7 +56,9 @@ export default function Home({ darkMode, toggleDarkMode }) {
       <div className="darkmode-btn" onClick={() => handleDarkModeClick()}></div>
       <Cursor darkMode={darkMode} />
       <div className="header fontspe">
-        <p>RR</p>
+        <Link to="/">
+          <p>RR</p>
+        </Link>
       </div>
       <div className="content">
         <div className="navbar">
