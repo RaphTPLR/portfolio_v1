@@ -35,6 +35,12 @@ export default function Details() {
     }
   }, [url, donnees, item]);
 
+  function handleReload() {
+    setTimeout(() => {
+      window.location.reload()
+    }, 10);
+  }
+
   return (
     <div className="details">
       <div className="presentation">
@@ -123,7 +129,7 @@ export default function Details() {
           :
           <div className="next-page">
             {item ? <img src={donnees[item.id].images[0]} alt="" /> : ""}
-            {item ? <Link to={donnees[item.id].path}>
+            {item ? <Link to={donnees[item.id].path} onClick={() => handleReload()}>
               <h2>NEXT PROJECT</h2>
               <p>{item ? donnees[item.id].name : ""} <img src={BtnL} alt="" /></p>
             </Link> : ""}
