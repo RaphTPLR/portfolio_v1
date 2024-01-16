@@ -39,13 +39,15 @@
         "name": "AVG Challenge",
         "images": [
           "https://staticg.sportskeeda.com/editor/2023/07/feaac-16900539267765-1920.jpg",
-          "https://i.goopics.net/98hy5w.png",
-          "https://i.goopics.net/loszvj.png",
+          "https://i.goopics.net/0lu98b.png",
+          "https://i.goopics.net/ysy16j.png",
           "https://i.goopics.net/pcv55v.png",
-          "https://i.goopics.net/y867bq.png",
-          "https://i.goopics.net/wgjhgb.png",
-          "https://i.goopics.net/xneauv.png",
-          "https://i.goopics.net/cnksau.png"
+          "https://i.goopics.net/4ibhkj.png",
+          "https://i.goopics.net/topc9g.png",
+          "https://i.goopics.net/2y4loh.png",
+          "https://i.goopics.net/xeambs.png",
+          "https://i.goopics.net/u1tuan.png",
+          "https://i.goopics.net/oqunx7.png"
         ],
         "titres": [
           "GREET PAGE",
@@ -54,7 +56,9 @@
           "AVERAGE PAGE",
           "SCORES PAGE",
           "HELP PAGE",
-          "SETTINGS PAGE"
+          "SETTINGS PAGE",
+          "HOME PAGE (LIGHTMODE)",
+          "HOME PAGE (MOBILE & TABLET)"
         ],
         "description": [
           "Our loading page is displayed until all our pokemons are loaded. It lasts 5-10 seconds on average.",
