@@ -39,18 +39,18 @@
         "name": "AVG Challenge",
         "images": [
           "https://staticg.sportskeeda.com/editor/2023/07/feaac-16900539267765-1920.jpg",
-          "https://i.goopics.net/0lu98b.png",
-          "https://i.goopics.net/ysy16j.png",
+          "https://i.goopics.net/98hy5w.png",
+          "https://i.goopics.net/loszvj.png",
           "https://i.goopics.net/pcv55v.png",
-          "https://i.goopics.net/4ibhkj.png",
-          "https://i.goopics.net/topc9g.png",
-          "https://i.goopics.net/2y4loh.png",
-          "https://i.goopics.net/xeambs.png",
+          "https://i.goopics.net/y867bq.png",
+          "https://i.goopics.net/wgjhgb.png",
+          "https://i.goopics.net/xneauv.png",
+          "https://i.goopics.net/cnksau.png",
           "https://i.goopics.net/u1tuan.png",
           "https://i.goopics.net/oqunx7.png"
         ],
         "titres": [
-          "GREET PAGE",
+          "LANDING PAGE",
           "CHALLENGE PAGE",
           "HOME PAGE",
           "AVERAGE PAGE",
@@ -61,11 +61,15 @@
           "HOME PAGE (MOBILE & TABLET)"
         ],
         "description": [
-          "Our loading page is displayed until all our pokemons are loaded. It lasts 5-10 seconds on average.",
-          "All available pokemons can be found on this page. You can sort them alphabetically, by type and by ID. You can also add pokemons to your collection by clicking on the pokeball next to their name.",
-          "This is where you'll find your pokemon collection. Some information about them, such as name or ID, is available. You can release them by clicking on the Remove button.",
-          "When you have a pokemon in your collection, the pokeball next to its name changes as an indication.",
-          "This is where you'll find most of the information about each pokemon. You open this page by clicking on the pokemon you want on the Home page. You can find types, stats, ID, description and attacks."
+          "This is the site's landing page. After clicking on the button, you'll be redirected to a Discord login form. Authentication on the site is by Discord and nothing else.",
+          "Once you've logged in, you can choose which challenge you'd like to see news about and/or take part in. Below each challenge, you can see whether it's planned, in progress or completed.",
+          "This is the main page of the site. This is where you'll find a summary of the chosen challenge and last week's results.",
+          "This is a more detailed page of last week's results. You can see the improvement in each player's average score. At the top of the page, you can also see the best and worst score improvements.",
+          "If you want to see all the scores achieved since the start of the challenge, this is the place to go. You can sort by alphabetical order, average score or search for a player if you wish.",
+          "The problems most frequently encountered by users are listed here, along with their answers.",
+          "If you wish to change your name, choose your guild, create a guild if you haven't already done so, or log out, you can do so on the Settings page.",
+          "The site has a light/dark mode to suit your preferences.  This will be retained for future connections.",
+          "All types of device are supported by the site, whether it's a phone, tablet, laptop or other, the site is responsive."
         ],
         "client": "Personnal",
         "type": "Application Web",
@@ -82,22 +86,22 @@
         "name": "Sc@m3rZ",
         "images": [
           "https://images.pexels.com/photos/1365795/pexels-photo-1365795.jpeg",
-          "https://motionbgs.com/media/1039/rayquaza-flying-in-the-dark-sky.jpg",
-          "https://motionbgs.com/media/1039/rayquaza-flying-in-the-dark-sky.jpg"
+          "https://i.goopics.net/h0xs8b.png",
+          "https://i.goopics.net/1w0mpi.png",
+          "https://i.goopics.net/c2qz9j.png",
+          "https://i.goopics.net/wpcfow.png"
         ],
         "titres": [
-          "LOADING PAGE",
           "HOME PAGE",
-          "POKEDEX PAGE",
-          "HOME PAGE (CATCHED)",
-          "DETAILS PAGE"
+          "HOME PAGE (ALL GAMES)",
+          "DETAILS",
+          "DETAILS 2"
         ],
         "description": [
-          "Our loading page is displayed until all our pokemons are loaded. It lasts 5-10 seconds on average.",
-          "All available pokemons can be found on this page. You can sort them alphabetically, by type and by ID. You can also add pokemons to your collection by clicking on the pokeball next to their name.",
-          "This is where you'll find your pokemon collection. Some information about them, such as name or ID, is available. You can release them by clicking on the Remove button.",
-          "When you have a pokemon in your collection, the pokeball next to its name changes as an indication.",
-          "This is where you'll find most of the information about each pokemon. You open this page by clicking on the pokemon you want on the Home page. You can find types, stats, ID, description and attacks."
+          "Sc@m3rZ is a fake video game marketplace. When you arrive on the site, you'll find all the games in selections such as best rated or recently added.",
+          "When we scroll down below the selections, we can find all the games available on the site.",
+          "To see the details of a particular game, just click on its image. You can then rent the game, comment on it or rate it. There's a red or green tick to tell you whether you've already rented the game or not.",
+          "The green sticker in question."
         ],
         "client": "Ipssi - Paris",
         "type": "Vitrine - Collection",
@@ -113,22 +117,28 @@
         "name": "Gourmet",
         "images": [
           "https://images.pexels.com/photos/4635596/pexels-photo-4635596.png",
-          "https://motionbgs.com/media/1039/rayquaza-flying-in-the-dark-sky.jpg",
-          "https://motionbgs.com/media/1039/rayquaza-flying-in-the-dark-sky.jpg"
+          "https://i.goopics.net/ynuho2.png",
+          "https://i.goopics.net/asy1n2.png",
+          "https://i.goopics.net/f5uhga.png",
+          "https://i.goopics.net/9chl9i.png",
+          "https://i.goopics.net/zrnm8f.png",
+          "https://i.goopics.net/e4itf7.png"
         ],
         "titres": [
-          "LOADING PAGE",
           "HOME PAGE",
-          "POKEDEX PAGE",
-          "HOME PAGE (CATCHED)",
-          "DETAILS PAGE"
+          "HOME PAGE (SELECTION)",
+          "HOME PAGE (ALL RECIPES)",
+          "FILTER PAGE",
+          "DETAILS PAGE",
+          "DETAILS PAGE 2"
         ],
         "description": [
-          "Our loading page is displayed until all our pokemons are loaded. It lasts 5-10 seconds on average.",
-          "All available pokemons can be found on this page. You can sort them alphabetically, by type and by ID. You can also add pokemons to your collection by clicking on the pokeball next to their name.",
-          "This is where you'll find your pokemon collection. Some information about them, such as name or ID, is available. You can release them by clicking on the Remove button.",
-          "When you have a pokemon in your collection, the pokeball next to its name changes as an indication.",
-          "This is where you'll find most of the information about each pokemon. You open this page by clicking on the pokemon you want on the Home page. You can find types, stats, ID, description and attacks."
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
         ],
         "client": "Ipssi - Paris",
         "type": "Vitrine",
@@ -145,8 +155,15 @@
         "name": "CarteX",
         "images": [
           "https://external-preview.redd.it/2Xoeyo3H46sUbQkxjxFPxmVAGfh850D8Hoqe-LIpF70.jpg?auto=webp&s=dc6d78d562eef402d8b8b77c857804a344ae4fbd",
-          "https://motionbgs.com/media/1039/rayquaza-flying-in-the-dark-sky.jpg",
-          "https://motionbgs.com/media/1039/rayquaza-flying-in-the-dark-sky.jpg"
+          "https://i.goopics.net/7jhfx5.png",
+          "https://i.goopics.net/8paprd.png",
+          "https://i.goopics.net/lwkblt.png",
+          "https://i.goopics.net/shj41n.png",
+          "https://i.goopics.net/2okeq6.png",
+          "https://i.goopics.net/ogw9xv.png",
+          "https://i.goopics.net/6a9ms5.png",
+          "https://i.goopics.net/d6jtea.png",
+          "https://i.goopics.net/7uwsuf.png"
         ],
         "titres": [
           "LOADING PAGE",

@@ -58,6 +58,11 @@
                 h1 {
                     font-family: 'Karantina', system-ui;
                     letter-spacing: 3rem;
+                    transition: all .3s ease-in-out;
+
+                    &:hover {
+                        letter-spacing: 4rem !important;
+                    }
                 }
             }
             
