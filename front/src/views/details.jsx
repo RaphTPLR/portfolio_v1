@@ -106,7 +106,7 @@ export default function Details() {
       <div className="bloc-container">
         {item &&
           item.images.slice(1).map((image, index) => (
-            <div key={index} className="bloc bloc1">
+            <div key={index} className="bloc">
               <div className="image">
                 <img src={image} alt={`Image ${index + 1}`} />
               </div>
