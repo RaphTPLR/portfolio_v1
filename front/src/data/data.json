@@ -204,9 +204,9 @@
           "MAP"
         ],
         "description": [
-          "",
-          "",
-          ""
+          "I worked on this project during my internship, mainly on the customer account part. I don't have access to a customer account, so I'm posting a few images of the site I do have access to.",
+          "The login page is the only page I can go to that I've been working on. I did the responsive as well as the restyle of the buttons",
+          "This is the company map to find out where it is available in Europe."
         ],
         "client": "MET France",
         "type": "Application Web",
@@ -223,16 +223,16 @@
         "name": "Front Clone",
         "images": [
           "https://images7.alphacoders.com/133/1333817.jpeg",
-          "https://motionbgs.com/media/1039/rayquaza-flying-in-the-dark-sky.jpg",
-          "https://motionbgs.com/media/1039/rayquaza-flying-in-the-dark-sky.jpg"
+          "https://i.goopics.net/mdpfx4.png",
+          "https://i.goopics.net/w3b6rb.png"
         ],
         "titres": [
           "SPOTIFY",
           "X"
         ],
         "description": [
-          "",
-          ""
+          "When I was learning the web, I made a few clones for practice. It was mainly to improve my html css skills with existing designs. For the Spotify clone, this was the first clone I made, and I only made the home page.",
+          "For the X clone, it was primarily to understand how the front-end and back-end work and interact. There's a small database and API in this clone."
         ],
         "client": "Personnal",
         "type": "Vitrine",
@@ -247,23 +247,13 @@
         "id": 8,
         "name": "SOON",
         "images": [
-          "https://wallpapercave.com/wp/wp2349503.jpg",
-          "https://motionbgs.com/media/1039/rayquaza-flying-in-the-dark-sky.jpg",
-          "https://motionbgs.com/media/1039/rayquaza-flying-in-the-dark-sky.jpg"
+          "https://wallpapercave.com/wp/wp2349503.jpg"
         ],
         "titres": [
-          "LOADING PAGE",
-          "HOME PAGE",
-          "POKEDEX PAGE",
-          "HOME PAGE (CATCHED)",
-          "DETAILS PAGE"
+          ""
         ],
         "description": [
-          "Our loading page is displayed until all our pokemons are loaded. It lasts 5-10 seconds on average.",
-          "All available pokemons can be found on this page. You can sort them alphabetically, by type and by ID. You can also add pokemons to your collection by clicking on the pokeball next to their name.",
-          "This is where you'll find your pokemon collection. Some information about them, such as name or ID, is available. You can release them by clicking on the Remove button.",
-          "When you have a pokemon in your collection, the pokeball next to its name changes as an indication.",
-          "This is where you'll find most of the information about each pokemon. You open this page by clicking on the pokemon you want on the Home page. You can find types, stats, ID, description and attacks."
+          ""
         ],
         "client": "Personnal",
         "type": "Application Web & Mobile",

@@ -53,7 +53,7 @@ export default function Home({ darkMode, toggleDarkMode }) {
 
   return (
     <div className={`home ${lightMode ? 'darkmode' : 'lightmode'}`}>
-      <div className="darkmode-btn" onClick={() => handleDarkModeClick()}></div>
+      {/* <div className="darkmode-btn" onClick={() => handleDarkModeClick()}></div> */}
       <Cursor darkMode={darkMode} />
       <div className="header fontspe">
         <Link to="/">

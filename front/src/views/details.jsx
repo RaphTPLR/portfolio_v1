@@ -121,7 +121,7 @@ export default function Details() {
           item.id === donnees.length ?
           <div className="prev-page">
             {item ? <img src={donnees[item.id - 2].images[0]} alt="" /> : ""}
-            {item ? <Link to={donnees[item.id - 2].path}>
+            {item ? <Link to={donnees[item.id - 2].path} onClick={() => handleReload()}>
               <h2>PREVIOUS PROJECT</h2>
               <p><img src={BtnL} alt="" style={{transform: "rotate(180deg)"}}/>{item ? donnees[item.id - 2].name : ""}</p>
             </Link> : ""}
