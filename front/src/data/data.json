@@ -133,19 +133,19 @@
           "DETAILS PAGE 2"
         ],
         "description": [
-          "",
-          "",
-          "",
-          "",
-          "",
-          ""
+          "We have several images of dishes that you can click on to see the recipes. These are sorted by recommendations or favorites, for example",
+          "This is still on the main page, but with a different selection.",
+          "Once you've gone through the selections, you can see all the recipes available on the site.",
+          "In the navbar, there are different predefined filters. When you click on them, you can see the recipes that have this category.",
+          "Once you've clicked on a recipe, you can see all the ingredients needed to make it, as well as the quantities.",
+          "Then we can also find the steps to make the recipe perfectly."
         ],
         "client": "Ipssi - Paris",
         "type": "Vitrine",
         "role": "Dev fullstack",
         "techno": "PHP, SASS",
         "collab": "Rémi Korzeniowski",
-        "path": "/Marmiton",
+        "path": "/Gourmet",
         "date": "December, 2023",
         "timedev": "2 Days",
         "link": "https://avg-challenge.com/"
@@ -167,17 +167,25 @@
         ],
         "titres": [
           "LOADING PAGE",
-          "HOME PAGE",
-          "POKEDEX PAGE",
-          "HOME PAGE (CATCHED)",
-          "DETAILS PAGE"
+          "MARKETPLACE PAGE",
+          "DETAILS PAGE",
+          "INFO PAGE",
+          "CREATION COLLECTION PAGE",
+          "CREATION PAGE",
+          "BOOSTER PAGE",
+          "BOOSTER PAGE 2",
+          "COLLECTION PAGE"
         ],
         "description": [
-          "Our loading page is displayed until all our pokemons are loaded. It lasts 5-10 seconds on average.",
-          "All available pokemons can be found on this page. You can sort them alphabetically, by type and by ID. You can also add pokemons to your collection by clicking on the pokeball next to their name.",
-          "This is where you'll find your pokemon collection. Some information about them, such as name or ID, is available. You can release them by clicking on the Remove button.",
-          "When you have a pokemon in your collection, the pokeball next to its name changes as an indication.",
-          "This is where you'll find most of the information about each pokemon. You open this page by clicking on the pokemon you want on the Home page. You can find types, stats, ID, description and attacks."
+          "This is the home page. There are login buttons and redirections to the marketplace all over the page.",
+          "This page is the main page of this site. This is where all the available cards are grouped together.",
+          "When you click on the card of your choice, you can see everything on the card.",
+          "Here you can see all the people who worked on the project, as well as a brief summary of the project.",
+          "This is where you can see all the cards you've created.",
+          "On this interface you can create the card you want. The card is updated in real time.",
+          "On the booster page, you can simulate a booster opening. You can trigger the opening by clicking on the booster or on the button.",
+          "Once you've opened the booster, you can choose the cards you're interested in. After clicking on the 'Ajouté' button, it will be added to your personal collection.",
+          "Here you can see all the cards in your personal collection."
         ],
         "client": "Ipssi - Paris",
         "type": "Vitrine - Collection - Opening",
@@ -239,7 +247,7 @@
         "role": "Dev front-end",
         "techno": "HTML, CSS, REACTJS",
         "collab": "/",
-        "path": "/Spotify",
+        "path": "/Clones",
         "date": "May, 2023",
         "timedev": "1 Day"
       },

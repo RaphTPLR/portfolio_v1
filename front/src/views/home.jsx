@@ -5,21 +5,31 @@ import { Link } from "react-router-dom";
 import BtnL from "../assets/right-arrow-alt-regular-24.png";
 import Cursor from '../components/cursor';
 
+function choisir_fichier_json(url) {
+  if (url.startsWith("http://raphael-romero.com") || url.startsWith("https://raphael-romero.com")) {
+      return "assets/data.json";
+  } else {
+      return "src/data/data.json";
+  }
+}
 
 export default function Home({ darkMode, toggleDarkMode }) {
   const [donnees, setDonnees] = useState([]);
   const [imageAffichee, setImageAffichee] = useState();
   const [textAnimation, setTextAnimation] = useState(null);
   const [lightMode, setLightMode] = useState(true);
-    const containerRef = useRef(null);
+  const containerRef = useRef(null);
 
   useEffect(() => {
-    fetch("src/data/data.json")
-      .then((response) => response.json())
-      .then((data) => setDonnees(data))
-      .catch((error) =>
-        console.error("Erreur de chargement des données :", error)
-      );
+    const url = window.location.href;
+    const fichierJson = choisir_fichier_json(url);
+
+    fetch(fichierJson)
+        .then((response) => response.json())
+        .then((data) => setDonnees(data))
+        .catch((error) =>
+            console.error("Erreur de chargement des données :", error)
+        );
   }, []);
 
   const handleDivClick = (index) => {

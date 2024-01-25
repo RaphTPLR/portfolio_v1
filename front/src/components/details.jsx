@@ -4,19 +4,31 @@ import { Link } from "react-router-dom"
 
 import BtnL from "../assets/right-arrow-alt-regular-24.png";
 
+function choisir_fichier_json(url) {
+  if (url.startsWith("http://raphael-romero.com") || url.startsWith("https://raphael-romero.com")) {
+      return "assets/data.json";
+  } else {
+      return "src/data/data.json";
+  }
+}
+
+
 export default function Details() {
   const [url, setUrl] = useState();
   const [donnees, setDonnees] = useState([]);
   const [item, setItem] = useState();
 
   useEffect(() => {
-    fetch("src/data/data.json")
-      .then((response) => response.json())
-      .then((data) => setDonnees(data))
-      .catch((error) =>
-        console.error("Erreur de chargement des données :", error)
-      );
-  }, []);
+    const url = window.location.href;
+    const fichierJson = choisir_fichier_json(url);
+
+    fetch(fichierJson)
+        .then((response) => response.json())
+        .then((data) => setDonnees(data))
+        .catch((error) =>
+            console.error("Erreur de chargement des données :", error)
+        );
+}, []);
 
   useEffect(() => {
     const cheminURL = window.location.pathname;
@@ -121,7 +133,8 @@ export default function Details() {
           item.id === donnees.length ?
           <div className="prev-page">
             {item ? <img src={donnees[item.id - 2].images[0]} alt="" /> : ""}
-            {item ? <Link to={donnees[item.id - 2].path} onClick={() => handleReload()}>
+            {/* {item ? <Link to={donnees[item.id - 2].path} onClick={() => handleReload()}> */}
+            {item ? <Link to={donnees[item.id - 2].path}>
               <h2>PREVIOUS PROJECT</h2>
               <p><img src={BtnL} alt="" style={{transform: "rotate(180deg)"}}/>{item ? donnees[item.id - 2].name : ""}</p>
             </Link> : ""}
@@ -129,7 +142,8 @@ export default function Details() {
           :
           <div className="next-page">
             {item ? <img src={donnees[item.id].images[0]} alt="" /> : ""}
-            {item ? <Link to={donnees[item.id].path} onClick={() => handleReload()}>
+            {/* {item ? <Link to={donnees[item.id].path} onClick={() => handleReload()}> */}
+            {item ? <Link to={donnees[item.id].path}>
               <h2>NEXT PROJECT</h2>
               <p>{item ? donnees[item.id].name : ""} <img src={BtnL} alt="" /></p>
             </Link> : ""}
