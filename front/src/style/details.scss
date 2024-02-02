@@ -216,3 +216,63 @@
         }
     }
 }
+
+@media (max-width: 576px) {
+    .details {
+        .presentation {
+            img {
+                height: 100%;
+                width: 200vw !important;
+            }
+
+            .content {
+                justify-content: start;
+
+                .name {
+                    font-size: 2rem;
+                    height: 50vh;
+                    
+                    h1 {
+                        letter-spacing: 2rem;
+                        transition: all .3s ease-in-out;
+
+                        &:hover {
+                            letter-spacing: 2.3rem !important;
+                        }
+                    }
+                }
+
+                p {
+                    width: 6rem;
+                }
+
+                .text {
+                    flex-wrap: wrap;
+                    height: 34vh;
+                    margin-bottom: 0rem;
+
+                    .each {
+                        width: 30vw;
+
+                        span {
+                            margin: 1rem 2rem;
+                        }
+                    }
+                }
+            }
+        }
+
+        .bloc {
+            flex-direction: column-reverse !important;
+            height: 55vh;
+
+            .image {
+                width: 80vw;
+            }
+        }
+
+        .next-page {
+            height: 35vh;
+        }
+    }
+}
