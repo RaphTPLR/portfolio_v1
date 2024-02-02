@@ -61,6 +61,10 @@
         overflow-y: scroll;
         // scroll-snap-type: y mandatory;
 
+        .name {
+            display: none;
+        }
+
         &::-webkit-scrollbar {
             display: none;
         }
@@ -252,5 +256,68 @@
 
     .indice {
         background-color: var(--color-background) !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .content {
+        justify-content: center;
+
+        .navbar, .name-project {
+            display: none;
+        }
+
+        .container {
+            width: 80%;
+
+            .name {
+                display: block;
+                width: 100%;
+                text-align: center;
+                font-size: 3rem;
+                text-transform: uppercase;
+
+                h2 {
+                    transition: all .4s ease-in-out;
+                
+                    &.enter {
+                        opacity: 1;
+                        animation: enterAnimation .2s ease-in-out;
+                    }
+                    
+                    &.exit {
+                        opacity: 0;
+                        animation: exitAnimation .2s ease-in-out;
+                        
+                    }
+                }
+            }
+
+            @keyframes enterAnimation {
+                from {
+                    transform: translateY(-100%);
+                }
+                to {
+                    transform: translateY(0);
+                }
+            }
+        
+            @keyframes exitAnimation {
+                from {
+                    transform: translateY(0);
+                }
+                to {
+                    transform: translateY(-100%);
+                }
+            }
+
+            .selected .name {
+                display: block;
+            }
+
+            .unselected .name {
+                display: none;
+            }
+        }
     }
 }

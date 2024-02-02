@@ -3,13 +3,16 @@ import "../style/home.scss";
 import { Link } from "react-router-dom";
 
 import BtnL from "../assets/right-arrow-alt-regular-24.png";
-import Cursor from '../components/cursor';
+import Cursor from "../components/cursor";
 
 function choisir_fichier_json(url) {
-  if (url.startsWith("http://raphael-romero.com") || url.startsWith("https://raphael-romero.com")) {
-      return "assets/data.json";
+  if (
+    url.startsWith("http://raphael-romero.com") ||
+    url.startsWith("https://raphael-romero.com")
+  ) {
+    return "assets/data.json";
   } else {
-      return "src/data/data.json";
+    return "src/data/data.json";
   }
 }
 
@@ -25,11 +28,11 @@ export default function Home({ darkMode, toggleDarkMode }) {
     const fichierJson = choisir_fichier_json(url);
 
     fetch(fichierJson)
-        .then((response) => response.json())
-        .then((data) => setDonnees(data))
-        .catch((error) =>
-            console.error("Erreur de chargement des données :", error)
-        );
+      .then((response) => response.json())
+      .then((data) => setDonnees(data))
+      .catch((error) =>
+        console.error("Erreur de chargement des données :", error)
+      );
   }, []);
 
   const handleDivClick = (index) => {
@@ -58,11 +61,9 @@ export default function Home({ darkMode, toggleDarkMode }) {
     setLightMode(!lightMode);
     toggleDarkMode(!darkMode);
   };
-  
-
 
   return (
-    <div className={`home ${lightMode ? 'darkmode' : 'lightmode'}`}>
+    <div className={`home ${lightMode ? "darkmode" : "lightmode"}`}>
       {/* <div className="darkmode-btn" onClick={() => handleDarkModeClick()}></div> */}
       <Cursor darkMode={darkMode} />
       <div className="header fontspe">
@@ -86,11 +87,7 @@ export default function Home({ darkMode, toggleDarkMode }) {
                     onClick={() => handleDivClick(index)}
                   ></div>
                   <div className="name">
-                    {imageAffichee === index ? 
-                    <p
-                        >
-                            {item.name}
-                    </p> : ""}
+                    {imageAffichee === index ? <p>{item.name}</p> : ""}
                   </div>
                 </div>
               ))}
@@ -115,6 +112,17 @@ export default function Home({ darkMode, toggleDarkMode }) {
                       imageAffichee !== index ? "grayscale(100%)" : "none",
                   }}
                 >
+                  <div className="name">
+                    {imageAffichee !== null &&
+                      donnees[imageAffichee] !== undefined && (
+                        <h2
+                          onAnimationEnd={handleAnimationEnd}
+                          className={textAnimation}
+                        >
+                          {donnees[imageAffichee].name}
+                        </h2>
+                      )}
+                  </div>
                   <Link to={item.path}>
                     <div className="btn">
                       <p>
@@ -129,10 +137,7 @@ export default function Home({ darkMode, toggleDarkMode }) {
         </div>
         <div className="name-project">
           {imageAffichee !== null && donnees[imageAffichee] !== undefined && (
-            <h2
-              onAnimationEnd={handleAnimationEnd}
-              className={textAnimation}
-            >
+            <h2 onAnimationEnd={handleAnimationEnd} className={textAnimation}>
               {donnees[imageAffichee].name}
             </h2>
           )}
