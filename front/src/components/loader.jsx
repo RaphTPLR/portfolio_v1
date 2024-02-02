@@ -19,7 +19,7 @@ export default function Preloader() {
           setStatus("end");
         }, 1000);
       }
-    }, 20);
+    }, 15);
 
     return () => clearInterval(interval);
   }, [progress]);
@@ -30,6 +30,7 @@ export default function Preloader() {
     <div className={preloaderClass}>
       <div className="progress-bar">
         <p className='fontspe'>{progress}</p>
+        <span className='fontspe'>in progress</span>
       </div>
     </div>
   );

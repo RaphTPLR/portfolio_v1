@@ -1,6 +1,9 @@
 import '../style/details.scss';
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom"
+import { gsap } from "gsap";
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { ScrollToPlugin } from 'gsap/ScrollToPlugin';
 
 import BtnL from "../assets/right-arrow-alt-regular-24.png";
 
@@ -12,6 +15,7 @@ function choisir_fichier_json(url) {
   }
 }
 
+gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
 export default function Details() {
   const [url, setUrl] = useState();
@@ -47,11 +51,32 @@ export default function Details() {
     }
   }, [url, donnees, item]);
 
-  function handleReload() {
-    setTimeout(() => {
-      window.location.reload()
-    }, 10);
+  const SlideInLeft = (elem, delay, duration) => {
+    gsap.fromTo(
+      elem,
+      {
+        opacity: 0,
+        x: -200, 
+      },
+      {
+        opacity: 1,
+        x: 0,
+        delay: delay || 0.4,
+        duration: duration || 0.6,
+        scrollTrigger: {
+          trigger: elem,
+          start: "top center",
+          end: "bottom center"
+        }
+      }
+    )
   }
+
+  useEffect(() => {
+    if (donnees.length > 0) {
+        SlideInLeft(".image");
+    }
+}, [donnees]);
 
   return (
     <div className="details">
@@ -133,7 +158,6 @@ export default function Details() {
           item.id === donnees.length ?
           <div className="prev-page">
             {item ? <img src={donnees[item.id - 2].images[0]} alt="" /> : ""}
-            {/* {item ? <Link to={donnees[item.id - 2].path} onClick={() => handleReload()}> */}
             {item ? <Link to={donnees[item.id - 2].path}>
               <h2>PREVIOUS PROJECT</h2>
               <p><img src={BtnL} alt="" style={{transform: "rotate(180deg)"}}/>{item ? donnees[item.id - 2].name : ""}</p>
@@ -142,7 +166,6 @@ export default function Details() {
           :
           <div className="next-page">
             {item ? <img src={donnees[item.id].images[0]} alt="" /> : ""}
-            {/* {item ? <Link to={donnees[item.id].path} onClick={() => handleReload()}> */}
             {item ? <Link to={donnees[item.id].path}>
               <h2>NEXT PROJECT</h2>
               <p>{item ? donnees[item.id].name : ""} <img src={BtnL} alt="" /></p>

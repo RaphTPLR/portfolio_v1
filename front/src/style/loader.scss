@@ -7,8 +7,17 @@
     .progress-bar {
         position: absolute;
         top: 50%;
-        left: 48%;
+        left: 46%;
         font-size: 2rem;
+
+        span {
+            font-size: .7rem;
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+        }
     }
 }
 
